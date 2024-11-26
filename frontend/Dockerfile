@@ -1,6 +1,8 @@
 FROM node 
 
-COPY * /frontend/
+WORKDIR /frontend
+
+COPY * ./
 
 RUN npm install 
 
