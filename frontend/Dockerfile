@@ -1,8 +1,7 @@
-FROM node 
+FROM node
+
+COPY ./ /frontend/
 
 WORKDIR /frontend
 
-COPY * ./
-
-RUN npm install 
-
+RUN npm install
