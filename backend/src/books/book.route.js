@@ -1,7 +1,7 @@
 const express = require('express');
-const Book = require('./book.model');
-const { postABook, getAllBooks, getSingleBook, UpdateBook, deleteABook } = require('./book.controller');
-const verifyAdminToken = require('../middleware/verifyAdminToken');
+const Book = require('./book.model.js');
+const { postABook, getAllBooks, getSingleBook, UpdateBook, deleteABook } = require('./book.controller.js');
+const verifyAdminToken = require('../middleware/verifyAdminToken.js');
 const router =  express.Router();
 
 // frontend => backend server => controller => book schema  => database => send to server => back to the frontend
